@@ -1,0 +1,35 @@
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+collections:
+
+  Best of 2010s:
+    sort_title: !02 +30
+    summary: Rotten Tomatoes Best Movies of the 2010's
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/2010.jpg
+#    url_background: https://raw.githubusercontent.com/housefisharr/PMM-Configs/main/backgrounds/movie.png
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/best-of-the-2010s
+  Best of 2000s:
+    sort_title: !02 +31
+    summary: Rotten Tomatoes Best Movies of the 2000's
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/2000.jpg
+#    url_background: https://raw.githubusercontent.com/housefisharr/PMM-Configs/main/backgrounds/movie.png
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/best-of-the-00s
+  Best of 1990s:
+    sort_title: !02 +32
+    summary: Rotten Tomatoes Best Movies of the 1990's
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1990.jpg
+#    url_background: https://raw.githubusercontent.com/housefisharr/PMM-Configs/main/backgrounds/movie.png
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-90s
+  Best of 1980s:
+    sort_title: !02 +33
+    summary: Rotten Tomatoes Best Movies of the 1980's
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1980.jpg
+#    url_background: https://raw.githubusercontent.com/housefisharr/PMM-Configs/main/backgrounds/movie.png
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-80s

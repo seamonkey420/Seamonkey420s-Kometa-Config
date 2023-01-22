@@ -1,0 +1,115 @@
+## This file is a template remove the .template to use the file
+
+libraries:
+  4K Movies:                                    # Each library must match the Plex library name
+    metadata_path:
+    - file: config/movies_imdb.yml
+    - file: config/movies_tmdb.yml
+    - file: config/movies-rotten.yml
+    - file: config/movies-trakt.yml
+    overlay_path:
+    - remove_overlays: false                    # Set this to true to remove all overlays
+    - file: config/overlays/IMDBrating_overlays.yml
+    - file: config/overlays/imdb_top_250.yml
+  Movies:
+#    schedule: weekly(sunday)
+    metadata_path:
+    - file: config/movies_imdb.yml
+    - file: config/movies_tmdb.yml
+    - file: config/movies-rotten.yml
+    - file: config/movies-trakt.yml
+    overlay_path:
+    - remove_overlays: false                     # Set this to true to remove all overlays
+    - file: config/overlays/IMDBrating_overlays.yml
+    - file: config/overlays/imdb_top_250.yml
+  TV Shows:
+    metadata_path:
+    - file: config/show/imdb_top250.yml
+    operations:
+      mass_critic_rating_update: tmdb
+    overlay_path:
+    - remove_overlays: false                    # Set this to true to remove all overlays
+    - file: config/overlays/TMDBrating_overlays.yml
+    - file: config/overlays/imdb_top_250.yml
+  Cartoons:
+    metadata_path:
+    - file: config/show/decades.yml
+    - file: config/show/imdb_top250.yml
+    operations:
+      mass_critic_rating_update: tmdb
+    overlay_path:
+    - remove_overlays: false                    # Set this to true to remove all overlays
+    - file: config/overlays/TMDBrating_overlays.yml
+    - file: config/overlays/imdb_top_250.yml
+#  Music Videos:
+#    metadata_path:
+#    - file: config/show/decades.yml
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: false
+  show_filtered: false
+  show_options: false
+  show_missing: false
+  show_missing_assets: false
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+  show_unconfigured: true
+  playlist_exclude_users:
+webhooks:                                       # Can be individually specified per library as well
+  error:
+  version:
+  run_start:
+  run_end:
+  changes:
+  delete:
+plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run
+  url: 
+  token: 
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:                                           # REQUIRED for the script to run
+  apikey: 
+  language: en
+  cache_expiration: 60
+  region:
+trakt:
+  client_id: 
+  client_secret: 
+  pin:
+  authorization:
+  # everything below is autofilled by the script
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token: 
+    scope: public
+    created_at: 

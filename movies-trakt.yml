@@ -1,0 +1,15 @@
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+collections:
+  Trakt Trending and Popular:
+    sort_title: !03 +20
+    trakt_chart:
+      - chart: trending
+        limit: 100
+      - chart: popular
+        limit: 100
+    sync_mode: sync
+    summary: Trakt Popular and Trending Movies.

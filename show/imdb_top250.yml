@@ -1,0 +1,26 @@
+#############################################################
+#         Top IMDB and TMDB Collections                     #
+#         Created by seamonkey420                           #
+#############################################################
+#  Call this from your config.yml (Show only)               #
+#  Defaults to Top 250                                      #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 3
+
+templates:
+  imdb:
+    imdb_chart: <<chart>>_<<library_type>>s
+    collection_order: custom
+    sync_mode: sync
+
+collections:
+  IMDb Top 250:
+    template:
+      - name: imdb
+        chart: top
+      - name: chart_shared
+        key: top

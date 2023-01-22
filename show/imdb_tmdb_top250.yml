@@ -1,0 +1,38 @@
+#############################################################
+#         Top IMDB and TMDB Collections                     #
+#         Created by seamonkey420                           #
+#############################################################
+#  Call this from your config.yml (Show only)               #
+#  Defaults to Top 250                                      #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 3
+
+templates:
+  imdb:
+    imdb_chart: <<chart>>_<<library_type>>s
+    collection_order: custom
+    sync_mode: sync
+  top:
+    default:
+      limit_top: 250
+    tmdb_top_rated: <<limit_top>>
+    summary: A collection of the top rated <<library_type>>s according to TMDb.
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/TMDb%20Top%20Rated.jpg
+
+collections:
+  IMDb Top 250:
+    template:
+      - name: imdb
+        chart: top
+      - name: chart_shared
+        key: top
+  TMDb Top 250:
+    template:
+      - name: top
+      - name: customsync
+      - name: chart_shared
+        key: top

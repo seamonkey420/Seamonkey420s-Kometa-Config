@@ -1,0 +1,44 @@
+#############################################################
+#                Dynamic Decade Collections                 #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Show only)               #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/show/decade                               #
+#        template_variables:                                #
+#          # Turn the separator collection on/off           #
+#          use_separator: true                              #
+#          # Sets how the collection is sorted              #
+#          sort_by: critic_rating.desc                      #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: 12                           #
+#          # Sets the number of items per collection        #
+#          limit: 100                                       #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 4
+
+templates:
+  decade_dynamic:
+#    default:
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/<<key>>.jpg
+    smart_filter:
+      sort_by: random
+      any:
+        year: <<value>>
+      limit: 200
+      
+dynamic_collections:
+  Decade:
+    type: decade
+    title_format: <<key_name>>
+    template:
+      - decade_dynamic
+      - shared

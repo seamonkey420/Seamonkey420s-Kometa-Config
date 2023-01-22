@@ -1,0 +1,20 @@
+overlays:
+
+  TVDBSCORE:
+    plex_all: true
+
+  audience_rating:
+    overlay:
+      name: text(audience_rating%)
+      horizontal_offset: 118
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+      font: fonts/Inter-Medium.ttf
+      font_size: 65
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 160
+      back_height: 100
+    plex_all: true

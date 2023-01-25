@@ -74,8 +74,6 @@ collections:
         key: top
 
   IMDb Top Rated:
-    template:
         imdb_chart: top_english
         collection_order: custom
         sync_mode: sync
-        check_library: movie

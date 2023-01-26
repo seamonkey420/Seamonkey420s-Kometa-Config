@@ -2,6 +2,8 @@ overlays:
 
   TMDBSCORE:
     plex_all: true
+    overlay:
+      name: TMDBSCORE
 
   audience_rating:
     overlay:

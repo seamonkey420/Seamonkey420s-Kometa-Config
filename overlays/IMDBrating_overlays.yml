@@ -2,6 +2,8 @@ overlays:
 
   IMDBSCORE:
     plex_all: true
+    overlay:
+      name: IMDBSCORE
 
   audience_rating:
     overlay:

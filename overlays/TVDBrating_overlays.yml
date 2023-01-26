@@ -2,6 +2,8 @@ overlays:
 
   TVDBSCORE:
     plex_all: true
+    overlay:
+      name: TVDBSCORE
 
   audience_rating:
     overlay:

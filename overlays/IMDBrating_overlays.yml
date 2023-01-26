@@ -1,6 +1,5 @@
 overlays:
 
-  overlay: IMDBSCORE
   IMDBSCORE:
     plex_all: true
 

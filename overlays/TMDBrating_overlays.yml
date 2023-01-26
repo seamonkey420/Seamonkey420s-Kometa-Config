@@ -1,6 +1,5 @@
 overlays:
 
-  overlay: TMDBSCORE
   TMDBSCORE:
     plex_all: true
 

@@ -1,6 +1,5 @@
 overlays:
 
-  overlay: TVDBSCORE
   TVDBSCORE:
     plex_all: true
 

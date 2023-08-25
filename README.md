@@ -29,3 +29,6 @@ Screenshot examples below:
 ![pmm tv shows overlays](https://user-images.githubusercontent.com/6142436/214715365-19505dbf-d775-469f-9bb1-012d3665b4df.png)
 
 ![pmm cartoons collections and tmdb overlay](https://user-images.githubusercontent.com/6142436/214715367-001a3687-181e-40b8-a123-6f67b2606e27.png)
+
+![pmm 4K overlay](https://github.com/seamonkey420/Seamonkey420s-PlexMetaManager-Config/assets/6142436/c2f04e60-d5cf-4dec-a311-c3e8c92ab0ee)
+

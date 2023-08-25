@@ -11,6 +11,8 @@ TMDB collections for TV Shows and Cartoons: Top 250, Popular, Trending
 
 IMDB and TMDB score overlays for Movies, TV Shows, Cartoons
 
+4K overlay for 4K movies (including 4K DV, 4K HDR) for 4K movies
+
 IMDB Top 250 Overlay for Movies, TV Shows, Cartoons
 
 Decade collections for Cartoons

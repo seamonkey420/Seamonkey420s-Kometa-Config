@@ -11,6 +11,8 @@ libraries:
     - remove_overlays: false                    # Set this to true to remove all overlays
     - file: config/overlays/IMDBrating_overlays.yml
     - file: config/overlays/imdb_top_250.yml
+    - file: config/overlays/4K.yml
+    
   Movies:
 #    schedule: weekly(sunday)
     metadata_path:

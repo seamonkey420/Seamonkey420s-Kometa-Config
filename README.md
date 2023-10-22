@@ -17,7 +17,7 @@ IMDB Top 250 Overlay for Movies, TV Shows, Cartoons
 
 Decade collections for Cartoons
 
-See config.yml for examples on how to use.  See very bottom of page for how to call a specific .yml to run vs the default config.yml
+See config.yml for examples on how to use.  See wiki page on how to call a specific .yml to run vs the default config.yml
 
 
 Screenshot examples below:
@@ -32,21 +32,3 @@ Screenshot examples below:
 
 ![pmm 4K overlay](https://github.com/seamonkey420/Seamonkey420s-PlexMetaManager-Config/assets/6142436/c2f04e60-d5cf-4dec-a311-c3e8c92ab0ee)
 
-
-Running a custom .yml via SSH/Putty on a docker PMM instance:
-
---4K movies in a config-4k.yml located in same config folder as the default config.yml
-
-docker run --rm -it -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager --config "/config/config-4k.yml" --run
-
-Running a specific .yml as a task on a schedule in Synology DSM7.x as a task (run task as root):
-
-docker run --rm -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager --config "/config/config-4k.yml" --run
-
-Running a specific .yml via docker terminal on a synology:
-
-python plex_meta_manager.py --config /config/config-4k.yml
-
-Running PMM via docker terminal on a synology (default config.yml):
-
-python plex_meta_manager.py -r

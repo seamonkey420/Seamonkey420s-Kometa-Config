@@ -20,6 +20,7 @@ Decade collections for Cartoons
 See config.yml for examples on how to use.  See wiki page on how to call a specific .yml to run vs the default config.yml
 
 Example command to run specific .ymls from putty (pmm in docker on synology nas):
+
 docker run --rm -it -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager:develop --config "/config/config-custom.yml" --run
 
 

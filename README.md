@@ -22,6 +22,7 @@ See config.yml for examples on how to use.  See wiki page on how to call a speci
 Example command to run specific .ymls from putty / ssh (replace config-custom.yml with your yml):
 
 sudo -i
+
 docker run --rm -it -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager:develop --config "/config/config-custom.yml" --run
 
 

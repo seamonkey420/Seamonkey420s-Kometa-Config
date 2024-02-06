@@ -17,7 +17,10 @@ IMDB Top 250 Overlay for Movies, TV Shows, Cartoons
 
 Decade collections for Cartoons
 
-See config.yml for examples on how to use.  See wiki page on how to call a specific .yml to run vs the default config.yml
+Setup Notes:
+
+Be sure to setup the configure.yml with your servers info at the bottom (aka Plex url, api keys, etc)! I would recommend testing on a smaller library or even create a test library in Plex with just two or so movies.
+
 
 Example command to run specific .ymls from putty / ssh (replace config-custom.yml with your yml):
 

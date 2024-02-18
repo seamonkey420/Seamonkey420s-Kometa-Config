@@ -28,7 +28,7 @@ libraries:
     collection_files:
     - file: config/show/imdb_top250.yml
     operations:
-      mass_critic_rating_update: tmdb
+      mass_critic_rating_update: mdb_tmdb
     overlay_files:
     - remove_overlays: false                    # Set this to true to remove all overlays
     - file: config/overlays/TMDBrating_overlays.yml
@@ -38,7 +38,7 @@ libraries:
     - file: config/show/decades.yml
     - file: config/show/imdb_top250.yml
     operations:
-      mass_critic_rating_update: tmdb
+      mass_critic_rating_update: mdb_tmdb
     overlay_files:
     - remove_overlays: false                    # Set this to true to remove all overlays
     - file: config/overlays/TMDBrating_overlays.yml

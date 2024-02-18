@@ -33,6 +33,12 @@ Example command to run in Synology as scheduled task (ran as root):
 
 docker run --rm -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager:develop --config "/config/config.yml" --run
 
+Example command to run in terminal in Docker or Container Manager within Synology's DSM7 (second line shows running specific config yml file):
+
+python plex_meta_manager.py -r
+
+python plex_meta_manager.py --config /config/config-4k.yml
+
 Screenshot examples below:
 
 ![pmm movies collections](https://user-images.githubusercontent.com/6142436/214715369-2cd1b228-bd77-4a4a-81c9-8dcce753bdd4.png)

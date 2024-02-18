@@ -3,7 +3,7 @@ My personal Plex Meta Manager config and setup.
 
 IMDB collections for Movies and TV Shows:  Top 250, Popular, Trending
 
-Rotten Tomatoes collections for Movies: Best of 2010s, 2000s, 1990s, 1980s
+Best of 2020s, 2010s, 2000s, 1990s, 1980s via Trakt Lists
 
 Trakt collections for Movies: Popular, Trending
 

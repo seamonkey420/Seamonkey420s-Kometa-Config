@@ -2,12 +2,12 @@
 
 libraries:
   4K Movies:                                    # Each library must match the Plex library name
-    metadata_path:
+    collection_files:
     - file: config/movies_imdb.yml
     - file: config/movies_tmdb.yml
     - file: config/movies-rotten.yml
     - file: config/movies-trakt.yml
-    overlay_path:
+    overlay_files:
     - remove_overlays: false                    # Set this to true to remove all overlays
     - file: config/overlays/IMDBrating_overlays.yml
     - file: config/overlays/imdb_top_250.yml
@@ -15,37 +15,34 @@ libraries:
     
   Movies:
 #    schedule: weekly(sunday)
-    metadata_path:
+    collection_files:
     - file: config/movies_imdb.yml
     - file: config/movies_tmdb.yml
     - file: config/movies-rotten.yml
     - file: config/movies-trakt.yml
-    overlay_path:
+    overlay_files:
     - remove_overlays: false                     # Set this to true to remove all overlays
     - file: config/overlays/IMDBrating_overlays.yml
     - file: config/overlays/imdb_top_250.yml
   TV Shows:
-    metadata_path:
+    collection_files:
     - file: config/show/imdb_top250.yml
     operations:
       mass_critic_rating_update: tmdb
-    overlay_path:
+    overlay_files:
     - remove_overlays: false                    # Set this to true to remove all overlays
     - file: config/overlays/TMDBrating_overlays.yml
     - file: config/overlays/imdb_top_250.yml
   Cartoons:
-    metadata_path:
+    collection_files:
     - file: config/show/decades.yml
     - file: config/show/imdb_top250.yml
     operations:
       mass_critic_rating_update: tmdb
-    overlay_path:
+    overlay_files:
     - remove_overlays: false                    # Set this to true to remove all overlays
     - file: config/overlays/TMDBrating_overlays.yml
     - file: config/overlays/imdb_top_250.yml
-#  Music Videos:
-#    metadata_path:
-#    - file: config/show/decades.yml
 settings:
   cache: true
   cache_expiration: 60
@@ -59,7 +56,7 @@ settings:
   show_missing_season_assets: false
   show_missing_episode_assets: false
   show_asset_not_needed: true
-  sync_mode: append
+  sync_mode: sync
   minimum_items: 1
   default_collection_order:
   delete_below_minimum: true

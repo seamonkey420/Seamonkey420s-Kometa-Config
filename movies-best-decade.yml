@@ -1,0 +1,36 @@
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+collections:
+  Best of 2020s:
+    sort_title: !02 +30
+    summary: Best Movies of the 2020's (maintained by mdblist.com)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/2020.jpg
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/mmagtech/lists/best-of-2020-2030
+  Best of 2010s:
+    sort_title: !02 +31
+    summary: Best Movies of the 2010's (maintained by mdblist.com)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/2010.jpg
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/best-of-the-2010s
+  Best of 2000s:
+    sort_title: !02 +32
+    summary: Best Movies of the 2000's (maintained by mdblist.com)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/2000.jpg
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/best-of-the-00s
+  Best of 1990s:
+    sort_title: !02 +33
+    summary: Best Movies of the 1990's (maintained by mdblist.com)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1990.jpg
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-90s
+  Best of 1980s:
+    sort_title: !02 +34
+    summary: Best Movies of the 1980's (maintained by mdblist.com)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1980.jpg
+    collection_order: custom
+    trakt_list: https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-80s

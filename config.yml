@@ -5,7 +5,7 @@ libraries:
     collection_files:
     - file: config/movies_imdb.yml
     - file: config/movies_tmdb.yml
-    - file: config/movies-rotten.yml
+    - file: config/movies-best-decade.yml
     - file: config/movies-trakt.yml
     overlay_files:
     - remove_overlays: false                    # Set this to true to remove all overlays
@@ -18,7 +18,7 @@ libraries:
     collection_files:
     - file: config/movies_imdb.yml
     - file: config/movies_tmdb.yml
-    - file: config/movies-rotten.yml
+    - file: config/movies-best-decade.yml
     - file: config/movies-trakt.yml
     overlay_files:
     - remove_overlays: false                     # Set this to true to remove all overlays

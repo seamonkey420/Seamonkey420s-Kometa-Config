@@ -1,44 +1,44 @@
-# Seamonkey420s-PlexMetaManager-Config
-My personal Plex Meta Manager config and setup.  
+#Seamonkey420s-PlexMetaManager-Config
+## My personal Plex Meta Manager config and setup.  
 
-IMDB collections for Movies and TV Shows:  Top 250, Popular, Trending
+-IMDB collections for Movies and TV Shows:  Top 250, Popular, Trending
 
-Best of 2020s, 2010s, 2000s, 1990s, 1980s via Trakt Lists
+-Best of 2020s, 2010s, 2000s, 1990s, 1980s via Trakt Lists
 
-Trakt collections for Movies: Popular, Trending
+-Trakt collections for Movies: Popular, Trending
 
-TMDB collections for TV Shows and Cartoons: Top 250, Popular, Trending
+-TMDB collections for TV Shows and Cartoons: Top 250, Popular, Trending
 
-IMDB and TMDB score overlays for Movies, TV Shows, Cartoons
+-IMDB and TMDB score overlays for Movies, TV Shows, Cartoons
 
-4K overlay for 4K movies (including 4K DV, 4K HDR) for 4K movies
+-4K overlay for 4K movies (including 4K DV, 4K HDR) for 4K movies
 
-IMDB Top 250 Overlay for Movies, TV Shows, Cartoons
+-IMDB Top 250 Overlay for Movies, TV Shows, Cartoons
 
-Decade collections for Cartoons
+-Decade collections for Cartoons
 
-Setup Notes:
+**Setup Notes:** 
 
-Be sure to setup the configure.yml with your servers info at the bottom (aka Plex url, api keys, etc)! I would recommend testing on a smaller library or even create a test library in Plex with just two or so movies.
+Be sure to setup the section below settings in the config.yml with your servers info at the bottom (aka Plex url, api keys, etc)! I would recommend testing on a smaller library or even create a test library in Plex with just two or so movies.  I have removed the ARR configurations since i do not use them but they can be readded by getting from the pmm wiki page.
 
 
-Example command to run specific .ymls from putty / ssh (replace config-custom.yml with your yml):
-
+**Example command to run specific .ymls from putty / ssh (replace config-custom.yml with your yml):**
+```
 sudo -i
 
 docker run --rm -it -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager:develop --config "/config/config-custom.yml" --run
+```
 
-
-Example command to run in Synology as scheduled task (ran as root):
-
+**Example command to run in Synology as scheduled task (ran as root):**
+```
 docker run --rm -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager:develop --config "/config/config.yml" --run
-
-Example command to run in terminal in Docker or Container Manager within Synology's DSM7 (second line shows running specific config yml file):
-
+```
+**Example command to run in terminal in Docker or Container Manager within Synology's DSM7 (second line shows running specific config yml file):**
+```
 python plex_meta_manager.py -r
 
 python plex_meta_manager.py --config /config/config-4k.yml
-
+```
 Screenshot examples below:
 
 ![pmm movies collections](https://user-images.githubusercontent.com/6142436/214715369-2cd1b228-bd77-4a4a-81c9-8dcce753bdd4.png)

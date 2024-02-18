@@ -1,4 +1,4 @@
-#Seamonkey420s-PlexMetaManager-Config
+# Seamonkey420s-PlexMetaManager-Config
 ## My personal Plex Meta Manager config and setup.  
 
 -IMDB collections for Movies and TV Shows:  Top 250, Popular, Trending

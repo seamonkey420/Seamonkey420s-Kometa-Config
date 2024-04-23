@@ -1,5 +1,5 @@
 external_templates:
-  git: PMM/templates
+  - file: config/templates
   template_variables:
     collection_section: "01"
 

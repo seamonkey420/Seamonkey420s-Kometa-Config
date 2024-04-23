@@ -1,5 +1,6 @@
-# Seamonkey420s-PlexMetaManager-Config
-## My personal Plex Meta Manager config and setup.  
+# Seamonkey420s-Kometa-Config
+## My personal Kometa config and setup.  
+Kometa (previously known as Plex Meta Manager/PMM): https://kometa.wiki/en/latest/
 
 -IMDB collections for Movies and TV Shows:  Top 250, Popular, Trending
 
@@ -26,18 +27,18 @@ Be sure to setup the section below settings in the config.yml with your servers 
 ```
 sudo -i
 
-docker run --rm -it -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager:develop --config "/config/config-custom.yml" --run
+docker run --rm -it -v "/volume1/docker/kometa:/config:rw" kometateam/kometa:develop --config "/config/config-custom.yml" --run
 ```
 
 **Example command to run in Synology as scheduled task (ran as root):**
 ```
-docker run --rm -v "/volume1/docker/pmm:/config:rw" meisnate12/plex-meta-manager:develop --config "/config/config.yml" --run
+docker run --rm -v "/volume1/docker/kometa:/config:rw" kometateam/kometa:develop --config "/config/config.yml" --run
 ```
 **Example command to run in terminal in Docker or Container Manager within Synology's DSM7 (second line shows running specific config yml file):**
 ```
-python plex_meta_manager.py -r
+python kometa.py -r
 
-python plex_meta_manager.py --config /config/config-4k.yml
+python kometa.py --config /config/config-4k.yml
 ```
 Screenshot examples below:
 

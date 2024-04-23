@@ -1,8 +1,3 @@
-external_templates:
-  - file: config/templates
-  template_variables:
-    collection_section: "01"
-
 collections:
   Trakt Trending:
     sort_title: !03 +20

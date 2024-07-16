@@ -22,23 +22,25 @@ Kometa (previously known as Plex Meta Manager/PMM): https://kometa.wiki/en/lates
 
 Be sure to setup the section below settings in the config.yml with your servers info at the bottom (aka Plex url, api keys, etc)! I would recommend testing on a smaller library or even create a test library in Plex with just two or so movies.  I have removed the ARR configurations since i do not use them but they can be readded by getting from the pmm wiki page.
 
+Examples below show using latest image, if you using develop image: replace kometateam/kometa:latest with kometateam/kometa:develop
+
 
 **Example command to run specific .ymls from putty / ssh (replace config-custom.yml with your yml):**
 ```
 sudo -i
 
-docker run --rm -it -v "/volume1/docker/kometa:/config:rw" kometateam/kometa:develop --config "/config/config-custom.yml" --run
+docker run --rm -it -v "/volume1/docker/kometa:/config:rw" kometateam/kometa:latest --config "/config/config-custom.yml" --run
 ```
 
 **Example command to run in Synology as scheduled task (ran as root):**
 ```
-docker run --rm -v "/volume1/docker/kometa:/config:rw" kometateam/kometa:develop --config "/config/config.yml" --run
+docker run --rm -v "/volume1/docker/kometa:/config:rw" kometateam/kometa:latest --config "/config/config-custom.yml" --run
 ```
 **Example command to run in terminal in Docker or Container Manager within Synology's DSM7 (second line shows running specific config yml file):**
 ```
 python kometa.py -r
 
-python kometa.py --config /config/config-4k.yml
+python kometa.py --config /config/config-custom.yml
 ```
 Screenshot examples below:
 

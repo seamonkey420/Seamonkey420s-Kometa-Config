@@ -1,6 +1,7 @@
 # Seamonkey420s-Kometa-Config
 ## My personal Kometa config and setup.  
 Kometa (previously known as Plex Meta Manager/PMM): https://kometa.wiki/en/latest/
+(still using this exact setup in Nov 2025)
 
 -IMDB collections for Movies and TV Shows:  Top 250, Popular, Trending
 

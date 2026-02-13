@@ -1,7 +1,7 @@
 # Seamonkey420s-Kometa-Config
 ## My personal Kometa config and setup.  
 Kometa (previously known as Plex Meta Manager/PMM): https://kometa.wiki/en/latest/
-(still using this exact setup in Nov 2025)
+(still using this exact setup in Feb 2026)
 
 -IMDB collections for Movies and TV Shows:  Top 250, Popular, Trending
 
@@ -21,7 +21,7 @@ Kometa (previously known as Plex Meta Manager/PMM): https://kometa.wiki/en/lates
 
 **Setup Notes:** 
 
-Copy the this whole repo to the config folder for your Kometa setup
+Copy the this whole repo to the config folder for your Kometa setup (including folders, they contain poster files used and overlays)
 
 Be sure to setup the section below settings in the config.yml with your servers info at the bottom (aka Plex url, api keys, etc)! I would recommend testing on a smaller library or even create a test library in Plex with just two or so movies.  I have removed the ARR configurations since i do not use them but they can be readded by getting from the pmm wiki page.
 
